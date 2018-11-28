@@ -20,6 +20,9 @@
    Base Styles
    ===========
 */
+a#navicon {
+    display: none;
+}
 
 
 
@@ -30,6 +33,16 @@
 */
 
 @media only screen and (max-width: 480px) {
+    a#navicon {
+        display: block;
+    }
 
-   
+    nav.horizontal ul {
+        display: none;
+    }
+
+    nav.horizontal ul:hover,
+    a#navicon:hover+ul {
+        display: block;
+    }
 }
